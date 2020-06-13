@@ -1,0 +1,124 @@
+
+nav{
+    width: 100%;
+    padding-top: 3rem;
+    height: fit-content;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #095163cf;
+    z-index: 10;
+}
+.menu-out{
+    display: none;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    border: none;
+    background-color: #dadcdd94;
+    font-size: 1.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 20px 0 20px 0;
+    color: rgb(248, 123, 7);
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+.nav{
+    flex: 4;
+    /* background-color: blueviolet; */
+}
+.nav-list{
+    float: left;
+    margin: 1rem 4rem;
+}
+
+.nav-list li .link{
+    margin: 0 1rem;
+    font-size: 24px;
+    font-family: cursive;
+    color: #eee;
+    transition: all 650ms ease;
+}
+.nav-list li .active{
+    color: rgb(219, 235, 8) !important;
+}
+.nav-list li .link:hover{
+    color: #00faa7;
+}
+
+
+.nav-profile{
+    flex: 1; 
+}
+
+@media only screen and (max-width: 785px){
+    nav, .nav, nav-list{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 22%;
+        text-align: center;
+    }
+    
+    .nav-list li{
+        text-align: center;
+        display: flex;
+        left: 0;
+        top: 0;
+        margin: 1rem 0;
+        margin:  2rem -3rem;
+    }
+    .nav-list li .link{
+        font-size: 20px;
+    }
+
+    .nav-profile{
+        position: absolute;
+        bottom: 3rem;
+    }
+    nav{
+        border-radius: 0px 10px 10px 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        background-color: #00ccffd3;
+
+    }
+    .menu-out{
+        display: block;
+        position: fixed;
+        outline: none;
+    }
+    .menu-in{
+        display: block;
+        position: fixed;
+        border: none;
+        border-radius: 0px 20px 20px 0;
+        width: 22%;
+        left: 0;
+        bottom: 0;
+        background-color: #00ccffb4;
+        color: #ff04dd;
+        font-weight: 600;
+        outline: none;
+        font-size: 1.5rem;
+        padding: 0.8rem 1rem;
+        z-index: 20;
+        transition: all 0.5s ease;
+    }
+
+
+}
+@media only screen and (max-width: 425px){
+    nav{
+        width: 38%;
+    }
+    .menu-in{
+        width: 38%;
+    }
+}

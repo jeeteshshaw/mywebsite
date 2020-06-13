@@ -1,0 +1,121 @@
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( #00c2fd, rgb(103, 239, 164));
+}
+.container-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.container-items .phone-img{
+    
+    margin-top: 8rem;
+    margin-right: 4rem;
+
+}
+.container-items .phone-img img{
+    width: 500px;
+    height: 600px;
+}
+.container-items .Form-login{
+    margin-top: -4rem;
+    margin-left: 8rem;
+    
+    border-bottom-color: #333;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+}
+
+.input-box{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    
+}
+
+input::placeholder{
+    color: #fff;
+}
+input{
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    outline: none;
+    border-bottom-color: rgba(228, 220, 220, 0.596);
+    
+}
+.input-item:focus{
+    border-bottom: 1px solid rgb(219, 235, 8);
+}
+
+.container-items .Form-login .login-btn{
+    margin-top: 2rem;
+}
+
+.container-items .Form-login .input-item{
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    display: block;
+}
+.container-items .Form-login .submit-btn{
+    border: 2px solid #00c2fd;
+    color: #fff;
+    border-radius: 45px;
+    padding: 1rem 3rem;
+    background-color: rgb(10, 105, 247);
+    margin-left: 4rem;
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.container-items .Form-login .submit-btn:hover{
+    background-color: rgb(5, 62, 146);
+
+}
+
+
+
+@media only screen and (max-width: 1100px){
+    .container-items .Form-login{
+        display: block;
+        margin-top: 5rem;
+    }
+}
+@media only screen and (max-width: 880px){
+    .container-items{
+        flex-direction: column;
+    }
+    .container{
+        height: 200vh;
+    }
+    .container-items .phone-img{
+        margin: 0;
+    }
+    .container-items .phone-img img{
+        margin: 4rem 0;
+    }
+    .container-items .Form-login{
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    .container-items .phone-img img{
+        width: 400px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .container-items .phone-img img{
+        width: 300px;
+        height: 400px;
+    }
+}

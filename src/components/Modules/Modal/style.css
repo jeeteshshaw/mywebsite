@@ -1,0 +1,46 @@
+.modal-container{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(32, 32, 32, 0.589);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #333;
+}
+.modal-container .modal{
+    width: 450px;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(199, 194, 194);
+}
+
+.modal-container .modal .header{
+    border-bottom: 1px solid #333;
+    font-size: 1.5rem;
+    margin: 1rem 0; 
+    position: relative;
+}
+.modal-container .modal .header p{
+    top: 0;
+}
+.modal-container .modal .body{
+    font-size: 1rem;
+    margin: 1rem 0; 
+    padding: 1rem 0;
+}
+.modal-container .modal .foot{
+    font-size: 1rem;
+    margin: 1rem 0; 
+    position: relative;
+    padding: 1rem;
+    
+}
+.modal-container .modal .foot button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background-color: rgb(240, 240, 240);
+}
